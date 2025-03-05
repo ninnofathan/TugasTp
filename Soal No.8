@@ -1,0 +1,50 @@
+#include <stdio.h>
+struct Mahasiswa {
+    char nama[50];
+    char lokasi[50];
+    char kode[20];
+    
+};
+
+int main() {
+    float permata1, permata2, permata3, permata4, permata5, nilai_kualitas;
+    struct Mahasiswa Tambang;
+
+    printf("=== INPUT ===\n");
+    printf("Nama pemilik: ");
+    gets(Tambang.nama);
+
+    printf("Lokasi tambang:");
+    gets(Tambang.lokasi);
+
+    printf("Kode tambang: ");
+    gets(Tambang.kode);
+
+    printf("Kualitas permata 1: ");
+    scanf("%f", &permata1);
+
+    printf("Kualitas permata 2: ");
+    scanf("%f", &permata2);
+    
+    printf("Kualitas permata 3: ");
+    scanf("%f", &permata3);
+    
+    printf("Kualitas permata 4: ");
+    scanf("%f", &permata4);
+
+    printf("Kualitas permata 5: ");
+    scanf("%f", &permata5);
+
+   
+    nilai_kualitas = (permata1 + permata2 + permata3 + permata4 + permata5) /5;
+
+    // Output hasil perhitungan
+    printf("\nOUTPUT");
+    printf("\n=== Data Mahasiswa ===");
+    printf("\nNama Pemilik : %s", Tambang.nama);
+    printf("\nLokasi tambang : %s", Tambang.lokasi);
+    printf("\nKode tambang : %s", Tambang.kode);
+    printf("\nNilai kualitas rata-rata: %.2f", nilai_kualitas);
+
+    return 0;
+}
