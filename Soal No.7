@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+// Definisi struct untuk menyimpan data mahasiswa
+struct Mahasiswa {
+    char nama[57];
+    char jurusan[46];
+    char kelas[10];
+    char nim[20];
+};
+
+int main() {
+    struct Mahasiswa DLOR2025;
+
+    // Input dari pengguna
+    printf("INPUT\n");
+    printf("Nama Calon Asisten : ");
+    gets(DLOR2025.nama); // Langsung pakai angka, tanpa sizeof
+
+    printf("Jurusan : ");
+    gets(DLOR2025.jurusan);
+
+    printf("Kelas : ");
+    gets(DLOR2025.kelas);
+
+    printf("NIM : ");
+    gets(DLOR2025.nim);
+
+    // Output hasil inputan
+    printf("\nOUTPUT\n");
+    printf("=== Data Mahasiswa ===");
+    printf("\nNama Calon Asisten : %s", DLOR2025.nama);
+    printf("\nJurusan : %s", DLOR2025.jurusan);
+    printf("\nKelas : %s", DLOR2025.kelas);
+    printf("\nNIM : %s", DLOR2025.nim);
+
+    return 0;
+}
