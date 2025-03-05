@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main ()
+
+{
+
+float p_alas, t_alas, t_silinder, volume;
+
+printf("=== INPUT ===\n");
+
+printf ("Panjang sisi alas (dalam cm):");
+
+scanf("%f", &p_alas);
+
+printf("Tinggi alas (dalam cm):");
+
+scanf("%f",&t_alas);
+
+printf("Tinggi Silinder (dalam cm):");
+
+scanf ("%f", &t_silinder);
+
+volume = 0.5 * p_alas * t_alas * t_silinder;
+
+printf ("\n=== OUTPUT ===");
+
+printf ("\nVolume tabung: %.2f cm^3", volume);
+
+return 0;
+}
